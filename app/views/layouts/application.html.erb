@@ -9,9 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <h1 style="text-align: center">Cassie L Morrison</h1>
     <ul>
-      <li><%= link_to 'Books',  book_path %></li>
+      <% if can? :read, Book %>
+        <li><%= link_to 'Books',  book_path %></li>
+      <%end %>
+      <% if can? :read, Event %>
       <li><%= link_to 'Events',  event_path %></li>
+      <%end %>
+      <% if can? :read, Blog %>
       <li><%= link_to 'Blogs',  blog_path %></li>
+      <%end %>
       <li><a href="#about">About</a></li>
     </ul>
   </head>

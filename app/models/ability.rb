@@ -9,21 +9,24 @@ class Ability
     can :cru, :all # Guest
     cannot :cru, :user
 
-    if user.privledge == "owner"
+    if user.role == "owner"
       can :manage, :all
     end
 
-    if user.privledge == "admin"
+    #TODO -- need to finish the abilities (you've only done Event lol...)
+
+    if user.role == "admin"
       can :manage, Blog
       can :manage, Event
       can :read, User
       can :read, Book
     end
 
-    if user.privledge == "assistant"
+    if user.role == "assistant"
       can :manage, Event
       can :read, Book
       can :read, Blog
+      cannot :read, User
     end
 
     # Define abilities for the passed in user here. For example:
