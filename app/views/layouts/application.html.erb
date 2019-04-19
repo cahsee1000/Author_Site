@@ -16,6 +16,13 @@
     </ul>
   </head>
 
+  <div id="login">
+    <% if current_user %>
+      Logged in as <%= current_user.email %>.
+      <%= link_to "Log Out", logout_path %>
+    <% end %>
+  </div>
+
   <body>
     <%= yield %>
   </body>

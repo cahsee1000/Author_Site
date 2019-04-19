@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/destroy'
+  resources :users
   get 'book', to: 'books#index', as: 'book'
   get 'event', to: 'events#index', as: 'event'
   get 'blog', to: 'blogs#index', as: 'blog'
+
+  resources :sessions, only: [:new, :create, :destroy]
+
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
 
   resources :blogs
   resources :events
