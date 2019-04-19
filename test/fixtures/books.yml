@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  photo: MyString
+  genre: MyString
+  agerange: MyString
+  pagecount: 1
+  wordcount: 1
+  releasedate: 2019-04-18
+  blurb: MyText
+  excerpt: MyText
+  type: 
+  format: MyString
+  relatedlink: MyString
+
+two:
+  title: MyString
+  description: MyText
+  photo: MyString
+  genre: MyString
+  agerange: MyString
+  pagecount: 1
+  wordcount: 1
+  releasedate: 2019-04-18
+  blurb: MyText
+  excerpt: MyText
+  type: 
+  format: MyString
+  relatedlink: MyString

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-04-18
+  location: MyString
+  title: MyString
+  description: MyText
+  map: MyString
+  relatedbookid: 1
+
+two:
+  date: 2019-04-18
+  location: MyString
+  title: MyString
+  description: MyText
+  map: MyString
+  relatedbookid: 1
