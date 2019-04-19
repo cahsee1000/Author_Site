@@ -10,53 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_19_005814) do
+ActiveRecord::Schema.define(version: 2019_04_18_235532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "blogs", force: :cascade do |t|
-    t.string "title"
-    t.date "date"
-    t.string "picture"
-    t.text "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.string "photo"
-    t.string "genre"
-    t.string "agerange"
-    t.integer "pagecount"
-    t.integer "wordcount"
-    t.date "releasedate"
-    t.text "blurb"
-    t.text "excerpt"
-    t.string "type"
-    t.string "format"
-    t.string "relatedlink"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "contact_forms", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.text "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "events", force: :cascade do |t|
-    t.date "date"
-    t.string "location"
-    t.string "title"
-    t.text "description"
-    t.string "map"
-    t.integer "relatedbookid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
