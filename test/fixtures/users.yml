@@ -3,7 +3,9 @@
 one:
   email: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
+  role: MyString
 
 two:
   email: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
+  role: MyString

@@ -28,7 +28,8 @@
 
   <div class="field">
     <%= form.label :role %>
-    <%= form.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>  </div>
+    <%= form.text_field :role %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>

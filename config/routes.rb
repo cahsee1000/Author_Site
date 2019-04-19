@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  resources :users
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/destroy'
-  resources :users
   get 'book', to: 'books#index', as: 'book'
   get 'event', to: 'events#index', as: 'event'
   get 'blog', to: 'blogs#index', as: 'blog'
