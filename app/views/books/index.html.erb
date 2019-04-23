@@ -27,7 +27,7 @@
       <tr>
         <td><%= book.title.humanize.titleize %></td>
         <td><%= book.description.humanize %></td>
-        <td><%= book.photo %></td>
+        <td><%=image_tag(book.photo, style: 'width:140px;height:100px;')%></td>
         <td><%= book.genre.humanize %></td>
         <td><%= book.agerange.humanize %></td>
         <td><%= book.pagecount %></td>
