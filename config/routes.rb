@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'book', to: 'books#index', as: 'book'
   get 'event', to: 'events#index', as: 'event'
   get 'blog', to: 'blogs#index', as: 'blog'
+  get 'home', to: 'pages#home', as: 'home'
 
   resources :sessions, only: [:new, :create, :destroy]
 
@@ -17,6 +18,7 @@ Rails.application.routes.draw do
   resources :events
   resources :books
   resources :contact_forms
+  resources :pages
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'contact_forms#index'
+  root to: 'pages#home'
 end
