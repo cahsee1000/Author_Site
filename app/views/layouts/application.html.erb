@@ -10,13 +10,13 @@
     <h1 style="text-align: center"><a href="/">Cassie L Morrison</a></h1>
     <ul>
       <% if can? :read, Book %>
-        <li><%= link_to 'Books',  book_path %></li>
+        <li><%= link_to 'Books', '/books' %></li>
       <%end %>
       <% if can? :read, Event %>
-      <li><%= link_to 'Events',  event_path %></li>
+      <li><%= link_to 'Events', '/events' %></li>
       <%end %>
       <% if can? :read, Blog %>
-      <li><%= link_to 'Blogs',  blog_path %></li>
+      <li><%= link_to 'Blogs', '/blogs' %></li>
       <%end %>
       <li><a href="#about">About</a></li>
     </ul>

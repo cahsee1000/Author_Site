@@ -17,8 +17,8 @@
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= blog.title.humanize %></td>
-        <td><%= blog.date.humanize %></td>
-        <td><%= blog.picture.humanize %></td>
+        <td><%= blog.date %></td>
+        <td><%= blog.picture %></td>
         <td><%= blog.content.humanize %></td>
         <td><%= link_to 'Show', blog %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
