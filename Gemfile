@@ -69,3 +69,6 @@ gem 'mini_magick'
 gem 'will_paginate'
 
 gem 'newrelic_rpm'
+
+gem 'jquery-rails'
+
