@@ -14,7 +14,7 @@
           <a href="/books" class="dropbtn">Books</a>
           <div class="dropdown-content">
             <% @books.each do |book| %>
-              <a><%= book.title.humanize %></a>
+              <%=link_to book.title.humanize, book_path(book)%>
             <%end %>
           </div>
         </li>
@@ -24,7 +24,7 @@
           <a href="/events" class="dropbtn">Events</a>
           <div class="dropdown-content">
             <% @events.each do |event| %>
-              <a><%= event.title.humanize %></a>
+              <%=link_to event.title.humanize, event_path(event)%>
             <%end %>
           </div>
         </li>
@@ -34,7 +34,7 @@
           <a href="/blogs" class="dropbtn">Blogs</a>
            <div class="dropdown-content">
              <% @blogs.each do |blog| %>
-               <a><%= blog.title.humanize %></a>
+               <%=link_to blog.title.humanize, blog_path(blog)%>
              <%end %>
            </div>
         </li>
