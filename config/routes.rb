@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   resources :events
   resources :books
   resources :contact_forms
-  resources :pages
+  resources :pages do
+    get 'header', to: 'pages#header'
+    get 'footer', to: 'pages#footer'
+  end
+
 
   get 'sessions/new'
   get 'sessions/create'

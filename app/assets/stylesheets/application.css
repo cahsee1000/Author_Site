@@ -1,7 +1,15 @@
+#container {
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+    padding-left: 14px;
+}
+
+/*Navbar*/
+
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding-left: 10vw;
     overflow: hidden;
     background-color: #333;
 }
