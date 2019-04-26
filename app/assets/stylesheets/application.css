@@ -5,6 +5,11 @@
     padding-left: 14px;
 }
 
+#aboutme{
+    display: flex;
+    justify-content:space-around;
+}
+
 /*Navbar*/
 
 ul {

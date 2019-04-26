@@ -8,4 +8,8 @@ class PagesController < ApplicationController
 
   def footer
   end
+
+  def aboutme
+  end
+
 end
